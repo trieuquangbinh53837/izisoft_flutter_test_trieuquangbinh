@@ -15,10 +15,9 @@ class _HomePageState extends State<HomePage> {
     {
       'title': 'Make The World More',
       'description': 'Meaningful',
-      'image':
-          'https://dayve.vn/wp-content/uploads/2021/12/Cach-ve-trai-tim-buoc-6.png',
+      'imagePath': 'assets/images/anh4.png',
     },
-    // Add more items 
+    // Add more items
   ];
 
   @override
@@ -56,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(
                       vertical: 5,
-                    ), 
+                    ),
                     hintText: 'Search...',
                     prefixIcon: Icon(Icons.search),
                     border: OutlineInputBorder(
@@ -74,8 +73,8 @@ class _HomePageState extends State<HomePage> {
                   color: Color.fromARGB(255, 2, 189, 95),
                   child: ListTile(
                     contentPadding: EdgeInsets.all(16),
-                    leading: Image.network(
-                      items[index]['image']!,
+                    leading: Image.asset(
+                      items[index]['imagePath']!,
                       width: 50,
                       height: 50,
                       fit: BoxFit.cover,
@@ -144,26 +143,26 @@ class _HomePageState extends State<HomePage> {
                     cardTitle: 'Snack for the eldery',
                     price: 27,
                     category: 'OUTDOOR',
-                    child: Image.network(
-                      'https://image.vtc.vn/resize/th/upload/2022/01/06/cay-bang-thaiphonggallery-20-11243273.jpg',
-                      width: 150,
+                    child: Image.asset(
+                      'assets/images/anh2.jpg',
+                      width: 130,
                       height: 150,
                       fit: BoxFit.cover,
                     ),
                   ),
-                  SizedBox(width: 15), 
+                  SizedBox(width: 15),
                   CardView(
                     cardTitle: 'Food for poor kid',
                     price: 36,
                     category: 'INDOOR',
-                    child: Image.network(
-                      'https://image.vtc.vn/resize/th/upload/2022/01/06/cay-bang-nina-may-check-in-vietnamjpg-3-11223645.jpg',
-                      width: 150,
+                    child: Image.asset(
+                      'assets/images/anh3.jpg',
+                      width: 130,
                       height: 150,
                       fit: BoxFit.cover,
                     ),
                   ),
-                  // Add more CardView widgets 
+                  // Add more CardView widgets
                 ],
               ),
             ),

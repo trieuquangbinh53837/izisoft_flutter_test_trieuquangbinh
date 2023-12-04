@@ -21,12 +21,7 @@ class CardView extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.network(
-              'https://image.vtc.vn/resize/th/upload/2022/01/06/cay-bang-thaiphonggallery-20-11243273.jpg',
-              width: 150,
-              height: 150,
-              fit: BoxFit.cover,
-            ),
+            Image.asset('assets/images/anh1.jpg', width: 130, height: 150,fit: BoxFit.cover,),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
